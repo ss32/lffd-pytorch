@@ -7,6 +7,8 @@ import math
 import logging
 sys.path.append('..')
 sys.path.append('../..')
+sys.path.append('./')
+sys.path.append('./face_detection')
 from ChasingTrainFramework_GeneralOneClassDetection import logging_GOCD
 from ChasingTrainFramework_GeneralOneClassDetection import train_GOCD
 from ChasingTrainFramework_GeneralOneClassDetection.loss_layer_farm.loss import *

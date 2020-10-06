@@ -30,12 +30,11 @@ First, we introduce the functionality of each sub directory.
 
 Second, we present a common procedure for running the code for training (taking v2 as an example).
 
-1. prepare net model `net_farm/naivenet.py`
-2. prepare the training data by using the code in `data_provider_farm`. We provide a packed 
-training data of WIDERFACE trainset. Please download from **Data Download**.
+1. prepare net model by running `python3 ./net_farm/naivenet.py`
+2. prepare the training data by downloading the training data and saving it in `face_detection/data_provider_farm/data_folder`.
 3. adjust the code around the line 241 in `data_iterator_farm/multithread_dataiter_for_cross_entropy_v2`.
 4. set the variables in configuration py script in `config_farm`.
-5. run `python configuration_10_320_20L_5scales_v2.py` in `config_farm` directory.
+5. run `python3 ./face_detection/configuration_10_320_20L_5scales_v2.py` from the top level directory.
 
 ### Data Download
 We have packed the training data of WIDERFACE train set. In the data, the faces less than 8 pixels are ignored, and some pure negative 
